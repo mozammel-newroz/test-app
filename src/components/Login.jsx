@@ -3,6 +3,7 @@ import axios from 'axios'
 
 const Login =  () => {
   const handleLogin = async () => {
+    console.log('page login', 'https://65.0.223.149/api/v1/public/auth/signin/')
     try {
       let response = await axios({
         url: "https://65.0.223.149/api/v1/public/auth/signin/",
@@ -16,6 +17,8 @@ const Login =  () => {
           scope: "openid profile",
         },
       });
+    console.log('page login2')
+
       console.log("my data", response.data.data);
     } catch (error) {
       console.log('my error', error) 
