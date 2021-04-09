@@ -5,7 +5,7 @@ const Login =  () => {
   const handleLogin = async () => {
     try {
       let response = await axios({
-        url: "http://65.0.223.149/api/v1/public/auth/signin/",
+        url: "https://65.0.223.149/api/v1/public/auth/signin/",
         method: "post",
         data: {
           grant_type: "password",
