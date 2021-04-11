@@ -30,7 +30,7 @@ const Login = () => {
   return (
     <div>
       <h2>Login page</h2>
-      <button onClick={handleLogin}>Login now</button>
+      <button onClick={handleLogin}>Signup now</button>
     </div>
   );
 };
